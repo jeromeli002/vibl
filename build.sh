@@ -12,6 +12,6 @@ cd build
 
 cmake .. 
 
-make
+make -j8
 
-
+truncate -s 512 *.bin
