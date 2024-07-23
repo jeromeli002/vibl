@@ -8,7 +8,7 @@ cd bootloader
 mkdir build
 cd build
 
-cmake .. 
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchain/gcc.cmake
 
 make
 
