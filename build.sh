@@ -6,11 +6,12 @@ apt install -y cmake gcc-arm-none-eabi git
 git clean -dfx
 git reset --hard HEAD
 
-mkdir build
+cd bootloader
+mkdir build && cd build
 cd build
 
 cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchain/gcc.cmake
 
-make -j8
+make
 
 truncate -s 512 *.bin
