@@ -10,8 +10,8 @@ cd bootloader
 mkdir build && cd build
 cd build
 
-cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchain/gcc.cmake
+cmake .. 
 
 make
 
-truncate -s 512 *.bin
+
